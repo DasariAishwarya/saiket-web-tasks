@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Peaceful Morning — Blog Post</title>
+  <style>
+    :root {
+      --bg: #0f172a;          
+      --panel: #111827;      
+      --text: #e5e7eb;        
+      --muted: #9ca3af;       
+      --accent: #60a5fa;      
+      --border: #1f2937;      
+    }
+    html, body {
+      height: 100%;
+      background: radial-gradient(1200px 800px at 10% 10%, #0b1022, var(--bg));
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      line-height: 1.7;
+      display: grid;
+      place-items: start center;
+      padding: 2rem 1rem 4rem;
+    }
+    header.site-header {
+      width: 100%;
+      max-width: 860px;
+      margin-bottom: 1rem;
+    }
+    header.site-header nav a {
+      color: var(--muted);
+      margin-right: .8rem;
+      text-decoration: none;
+    }
+    header.site-header nav a:hover { color: var(--text); }
+
+    article {
+      width: 100%;
+      max-width: 860px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: clamp(1rem, 2vw + 1rem, 2rem);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03);
+    }
+
+    h1.post-title {
+      font-size: clamp(1.6rem, 1rem + 3vw, 2.6rem);
+      line-height: 1.2;
+      margin: .2rem 0 .5rem;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem 1rem;
+      align-items: center;
+      color: var(--muted);
+      font-size: .95rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .meta .dot { opacity: .5; }
+    .meta address { font-style: normal; }
+
+    figure.hero {
+      margin: 0 0 1rem;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    figure.hero img { width: 100%; display: block; height: auto; }
+    figure.hero figcaption { color: var(--muted); padding: .6rem 1rem; font-size: .95rem; background: rgba(17,24,39,.35); }
+
+    section { margin: 1.25rem 0; }
+    h2 { font-size: 1.25rem; margin: .2rem 0 .4rem; }
+
+    ul {
+      padding-left: 1.25rem;
+      margin: .5rem 0 0;
+    }
+    li { margin: .25rem 0; }
+
+    aside.note {
+      background: rgba(96,165,250,.08);
+      border: 1px solid rgba(96,165,250,.35);
+      border-radius: 12px;
+      padding: .9rem 1rem;
+      color: #dbeafe;
+      margin: 1rem 0;
+    }
+
+    a.read-more {
+      display: inline-block;
+      margin-top: .6rem;
+      text-decoration: none;
+      border: 1px solid rgba(96,165,250,.4);
+      padding: .6rem .9rem;
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(96,165,250,.08);
+    }
+    a.read-more:hover { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(96,165,250,.15); }
+
+    footer.site-footer {
+      width: 100%;
+      max-width: 860px;
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="content" role="main">
+    <article itemscope itemtype="https://schema.org/BlogPosting">
+      <header>
+        <h1 class="post-title" itemprop="headline">A Peaceful Morning: Simple Habits to Start Your Day</h1>
+        <div class="meta">
+          <time datetime="2025-08-26" itemprop="datePublished">August 26, 2025</time>
+          <span class="dot">•</span>
+          <address rel="author" itemprop="author">By <a href="#author">Dasari Aishwarya</a></address>
+        </div>
+        <figure class="hero">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="Sunrise over a calm lake with mountains in the distance" itemprop="image" />
+          <figcaption>Good Morning!!</figcaption>
+        </figure>
+      </header>
+
+      <section aria-labelledby="intro">
+        <h2 id="intro">Introduction</h2>
+        <p itemprop="description">Mornings set the tone for the day. In this short post, we’ll build a simple routine that’s easy to follow and helps you feel focused, calm, and ready to go.</p>
+      </section>
+
+      <section aria-labelledby="main">
+        <h2 id="main">Main Content</h2>
+        <p>Try these small, practical steps right after you wake up:</p>
+        <ul>
+          <li><strong>Hydrate:</strong> Drink a glass of water to re-energize your body.</li>
+          <li><strong>Move:</strong> Do 5–10 minutes of stretches or a quick walk.</li>
+          <li><strong>Breathe:</strong> Take 3 deep breaths to calm your mind.</li>
+          <li><strong>Plan:</strong> Write down your top 3 tasks for the day.</li>
+          <li><strong>Unplug:</strong> Avoid social media for the first 30 minutes.</li>
+        </ul>
+
+        <aside class="note" role="note">
+          Tip: Keep your phone in another room overnight. It makes the morning feel quieter and more intentional.
+        </aside>
+      </section>
+
+      <section aria-labelledby="conclusion">
+        <h2 id="conclusion">Conclusion</h2>
+        <p>Consistency beats intensity. Start small, repeat daily, and your mornings will feel lighter and more productive.</p>
+      </section>
+
+      <p>
+        <a class="read-more" href="#" itemprop="url" aria-label="Read more about building a morning routine">Read More →</a>
+      </p>
+
+      <footer>
+        <p id="author">Written by <strong itemprop="author">Dasari Aishwarya</strong></p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <small>© 2025 Your Name. This is a demo blog post layout using semantic HTML5 tags.</small>
+  </footer>
+</body>
+</html>
