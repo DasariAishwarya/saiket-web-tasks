@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form (No JS)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .form-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        input[type="radio"] + label, input[type="checkbox"] + label {
+            display: inline;
+            font-weight: normal;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        /* Styling for HTML5 validation tooltips */
+        input:invalid, select:invalid {
+            border-color: #ff4d4d;
+        }
+        input:focus:invalid, select:focus:invalid {
+            outline: 2px solid #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label>Contact Preference:</label>
+            <input type="radio" id="emailPref" name="contact" value="Email" required>
+            <label for="emailPref">Email</label>
+            <input type="radio" id="phonePref" name="contact" value="Phone">
+            <label for="phonePref">Phone</label>
+
+            <label>Topics of Interest:</label>
+            <input type="checkbox" id="ai" name="topics" value="AI" required>
+            <label for="ai">AI/ML</label>
+            <input type="checkbox" id="coding" name="topics" value="Coding">
+            <label for="coding">Coding</label>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Choose a country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
