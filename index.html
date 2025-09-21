@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Interactive Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">✨ Interactive Web App</h1>
+    <p class="subtitle">Play with colors, greetings, and moods!</p>
+
+    <!-- User Name Input -->
+    <label for="username">👤 Your Name:</label>
+    <input type="text" id="username" placeholder="Type your name...">
+    <p id="greeting">👋 Hello, Guest!</p>
+
+    <!-- Theme Selector -->
+    <label for="theme">🎨 Theme Color:</label>
+    <select id="theme">
+      <option value="linear-gradient(135deg, #f8f9fa, #e0e0e0)">Default</option>
+      <option value="linear-gradient(135deg, #89f7fe, #66a6ff)">Ocean Blue</option>
+      <option value="linear-gradient(135deg, #fbc2eb, #a18cd1)">Pink Lavender</option>
+      <option value="linear-gradient(135deg, #f6d365, #fda085)">Sunset</option>
+      <option value="linear-gradient(135deg, #84fab0, #8fd3f4)">Mint Sky</option>
+    </select>
+
+    <!-- Mood Selector -->
+    <label for="mood">😊 Select Your Mood:</label>
+    <select id="mood">
+      <option value="">Choose a mood</option>
+      <option value="😃">Happy</option>
+      <option value="😌">Relaxed</option>
+      <option value="🤩">Excited</option>
+      <option value="😎">Cool</option>
+      <option value="🤔">Thinking</option>
+    </select>
+    <p id="moodDisplay" class="mood-box">💭 Your mood will appear here!</p>
+
+    <!-- Fun Button -->
+    <button id="surpriseBtn">🎉 Surprise Me</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
